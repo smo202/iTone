@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlaySoundViewController: UIViewController {
+class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var playButton: UIButton!
     
@@ -27,7 +27,8 @@ class PlaySoundViewController: UIViewController {
         NoteCardItem(image: #imageLiteral(resourceName: "treble-a")),
         NoteCardItem(image: #imageLiteral(resourceName: "treble-asharp")),
         NoteCardItem(image: #imageLiteral(resourceName: "treble-b")),
-        NoteCardItem(image: #imageLiteral(resourceName: "treble-bsharp"))
+        NoteCardItem(image: #imageLiteral(resourceName: "treble-bsharp")),
+        NoteCardItem(image: #imageLiteral(resourceName: "treble-c"))
     ]
 
     override func viewDidLoad() {
@@ -38,7 +39,52 @@ class PlaySoundViewController: UIViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        print("Play button pressed")
+        let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
+        switch pageNumber {
+        case 0:
+            print("Play C")
+        case 1:
+            print("Play C Sharp")
+        case 2:
+            print("Play D")
+        case 3:
+            print("Play E Flat")
+        case 4:
+            print("Play E")
+        case 5:
+            print("Play F")
+        case 6:
+            print("Play F Sharp")
+        case 7:
+            print("Play G")
+        case 8:
+            print("Play A Flat")
+        case 9:
+            print("Play A")
+        case 10:
+            print("Play B Flat")
+        case 11:
+            print("Play B")
+        case 12:
+            print("Play B Sharp/C")
+        default:
+            break
+        }
+    }
+    
+    func checkIfAtEndOfNotes(current: Int, target: Int) -> Bool {
+        return current == target
+    }
+    
+    func loopToBeginning() {
+        let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
+        let cgpoint = CGPoint(x: 0, y: collectionView.contentOffset.y)
+        if checkIfAtEndOfNotes(current: pageNumber, target: arrayOfNoteCardItems.count - 1) {
+            collectionView.setContentOffset(cgpoint, animated: false)
+        }
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        loopToBeginning()
     }
 }
 
