@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */; };
+		3C55C5E31F1908D4004FED66 /* CourseSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */; };
+		3C55C5E51F1911C6004FED66 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */; };
+		3C55C5EA1F1912F4004FED66 /* NoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */; };
+		3C55C5EC1F19130F004FED66 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */; };
 		3CF34DC01F16721900E5DF45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DBF1F16721900E5DF45 /* AppDelegate.swift */; };
-		3CF34DC21F16721900E5DF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DC11F16721900E5DF45 /* ViewController.swift */; };
-		3CF34DC51F16721900E5DF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DC31F16721900E5DF45 /* Main.storyboard */; };
-		3CF34DC81F16721900E5DF45 /* iTone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DC61F16721900E5DF45 /* iTone.xcdatamodeld */; };
 		3CF34DCA1F16721900E5DF45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DC91F16721900E5DF45 /* Assets.xcassets */; };
-		3CF34DCD1F16721900E5DF45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DCB1F16721900E5DF45 /* LaunchScreen.storyboard */; };
+		3CF34DD91F16766400E5DF45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DD81F16766400E5DF45 /* ViewController.swift */; };
+		3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DDA1F16767D00E5DF45 /* iTone.xcdatamodeld */; };
+		3CF34DDF1F16768F00E5DF45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DDD1F16768F00E5DF45 /* LaunchScreen.storyboard */; };
+		3CF34DE01F16768F00E5DF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DDE1F16768F00E5DF45 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCardItem.swift; path = Models/NoteCardItem.swift; sourceTree = "<group>"; };
+		3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CourseSelectionTableViewController.swift; path = Controllers/CourseSelectionTableViewController.swift; sourceTree = "<group>"; };
+		3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundViewController.swift; path = Controllers/PlaySoundViewController.swift; sourceTree = "<group>"; };
+		3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCollectionViewCell.xib; path = XIBS/NoteCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCollectionViewCell.swift; path = XIBS/NoteCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CF34DBC1F16721900E5DF45 /* iTone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CF34DBF1F16721900E5DF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CF34DC11F16721900E5DF45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3CF34DC41F16721900E5DF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3CF34DC71F16721900E5DF45 /* iTone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTone.xcdatamodel; sourceTree = "<group>"; };
 		3CF34DC91F16721900E5DF45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CF34DCC1F16721900E5DF45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3CF34DCE1F16721900E5DF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CF34DD61F16765C00E5DF45 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		3CF34DD81F16766400E5DF45 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		3CF34DDB1F16767D00E5DF45 /* iTone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTone.xcdatamodel; sourceTree = "<group>"; };
+		3CF34DDD1F16768F00E5DF45 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3CF34DDE1F16768F00E5DF45 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0C13251F17B24700EBFAB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3C55C5E61F191247004FED66 /* XIBS */ = {
+			isa = PBXGroup;
+			children = (
+				3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */,
+				3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */,
+			);
+			name = XIBS;
+			sourceTree = "<group>";
+		};
 		3CF34DB31F16721800E5DF45 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +82,52 @@
 		3CF34DBE1F16721900E5DF45 /* iTone */ = {
 			isa = PBXGroup;
 			children = (
+				3C0C13251F17B24700EBFAB4 /* Views */,
+				3CF34DE11F1676A600E5DF45 /* Storyboards */,
+				3CF34DE31F16770400E5DF45 /* Models */,
+				3CF34DE41F16770C00E5DF45 /* View Controllers */,
+				3CF34DE21F1676EE00E5DF45 /* Supporting Files */,
+				3C55C5E61F191247004FED66 /* XIBS */,
 				3CF34DBF1F16721900E5DF45 /* AppDelegate.swift */,
-				3CF34DC11F16721900E5DF45 /* ViewController.swift */,
-				3CF34DC31F16721900E5DF45 /* Main.storyboard */,
 				3CF34DC91F16721900E5DF45 /* Assets.xcassets */,
-				3CF34DCB1F16721900E5DF45 /* LaunchScreen.storyboard */,
-				3CF34DCE1F16721900E5DF45 /* Info.plist */,
-				3CF34DC61F16721900E5DF45 /* iTone.xcdatamodeld */,
 			);
 			path = iTone;
+			sourceTree = "<group>";
+		};
+		3CF34DE11F1676A600E5DF45 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3CF34DDE1F16768F00E5DF45 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		3CF34DE21F1676EE00E5DF45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CF34DDD1F16768F00E5DF45 /* LaunchScreen.storyboard */,
+				3CF34DD61F16765C00E5DF45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CF34DE31F16770400E5DF45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CF34DDA1F16767D00E5DF45 /* iTone.xcdatamodeld */,
+				3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3CF34DE41F16770C00E5DF45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3CF34DD81F16766400E5DF45 /* ViewController.swift */,
+				3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */,
+				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +190,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF34DCD1F16721900E5DF45 /* LaunchScreen.storyboard in Resources */,
+				3C55C5EA1F1912F4004FED66 /* NoteCollectionViewCell.xib in Resources */,
+				3CF34DDF1F16768F00E5DF45 /* LaunchScreen.storyboard in Resources */,
 				3CF34DCA1F16721900E5DF45 /* Assets.xcassets in Resources */,
-				3CF34DC51F16721900E5DF45 /* Main.storyboard in Resources */,
+				3CF34DE01F16768F00E5DF45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,32 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CF34DC21F16721900E5DF45 /* ViewController.swift in Sources */,
+				3C55C5EC1F19130F004FED66 /* NoteCollectionViewCell.swift in Sources */,
+				3CF34DD91F16766400E5DF45 /* ViewController.swift in Sources */,
+				3C55C5E51F1911C6004FED66 /* PlaySoundViewController.swift in Sources */,
+				3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */,
+				3C55C5E31F1908D4004FED66 /* CourseSelectionTableViewController.swift in Sources */,
 				3CF34DC01F16721900E5DF45 /* AppDelegate.swift in Sources */,
-				3CF34DC81F16721900E5DF45 /* iTone.xcdatamodeld in Sources */,
+				3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3CF34DC31F16721900E5DF45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CF34DC41F16721900E5DF45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3CF34DCB1F16721900E5DF45 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CF34DCC1F16721900E5DF45 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3CF34DCF1F16721900E5DF45 /* Debug */ = {
@@ -266,7 +315,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8G29LSUMV2;
-				INFOPLIST_FILE = iTone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTone/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerrylu.iTone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -279,7 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8G29LSUMV2;
-				INFOPLIST_FILE = iTone/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTone/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jerrylu.iTone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,17 +355,19 @@
 				3CF34DD31F16721900E5DF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3CF34DC61F16721900E5DF45 /* iTone.xcdatamodeld */ = {
+		3CF34DDA1F16767D00E5DF45 /* iTone.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				3CF34DC71F16721900E5DF45 /* iTone.xcdatamodel */,
+				3CF34DDB1F16767D00E5DF45 /* iTone.xcdatamodel */,
 			);
-			currentVersion = 3CF34DC71F16721900E5DF45 /* iTone.xcdatamodel */;
-			path = iTone.xcdatamodeld;
+			currentVersion = 3CF34DDB1F16767D00E5DF45 /* iTone.xcdatamodel */;
+			name = iTone.xcdatamodeld;
+			path = Models/iTone.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
