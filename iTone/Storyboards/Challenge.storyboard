@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d05-qf-sFo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="kUA-64-Ezw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bbW-ND-0el">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqN-fb-Yhw">
-                                <rect key="frame" x="132" y="278.66666666666669" width="150" height="180"/>
+                                <rect key="frame" x="112.5" y="243.5" width="150" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="0at-fX-Qpa"/>
                                     <constraint firstAttribute="width" constant="150" id="hE7-HX-6MW"/>
@@ -35,7 +39,6 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina5_5.fullscreen"/>
                     <connections>
                         <outlet property="countdownLabel" destination="nqN-fb-Yhw" id="VMi-kB-tFU"/>
                         <segue destination="cob-nB-cex" kind="show" identifier="toChallenge" id="lBx-rZ-ruz"/>
@@ -54,26 +57,26 @@
                         <viewControllerLayoutGuide type="bottom" id="4ps-6W-OIJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RwR-cD-wKg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-2a-tDB">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-IN-GlM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-Gs-Z1X" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="B♯/C">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-dq-rSx" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="C♯/D♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -83,19 +86,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-M3-hfK">
-                                        <rect key="frame" x="0.0" y="112" width="414" height="112"/>
+                                        <rect key="frame" x="0.0" y="100.5" width="375" height="100.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-2C-Bv4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="D">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-Gl-UPn" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="D♯/E♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -105,19 +108,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-Y4-YTD">
-                                        <rect key="frame" x="0.0" y="223.99999999999997" width="414" height="112.33333333333329"/>
+                                        <rect key="frame" x="0.0" y="201" width="375" height="101"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-g8-2S5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112.33333333333331"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="101"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="E/F♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-OG-c5I" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="112.33333333333331"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="101"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="E♯/F">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -127,19 +130,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-3u-jtW">
-                                        <rect key="frame" x="0.0" y="336.33333333333326" width="414" height="111.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="302" width="375" height="100"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-uK-OiD" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="111.66666666666669"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="F♯/G♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yda-AZ-8jq" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="111.66666666666669"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="G">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -149,19 +152,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMZ-1C-jHa">
-                                        <rect key="frame" x="0.0" y="448" width="414" height="112"/>
+                                        <rect key="frame" x="0.0" y="402" width="375" height="100.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-xB-IEB" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="G♯/A♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-ZN-kOf" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="A">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -171,19 +174,19 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fog-Hd-JBZ">
-                                        <rect key="frame" x="0.0" y="560" width="414" height="112"/>
+                                        <rect key="frame" x="0.0" y="502.5" width="375" height="100.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91j-V0-gu4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="A♯/B♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-tq-bky" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
                                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="B">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
