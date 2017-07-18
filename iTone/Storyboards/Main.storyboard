@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
-                            <tableViewSection headerTitle="Pitches" footerTitle="A = 440 Hz" id="6ke-TO-OH0">
+                            <tableViewSection headerTitle="Pitches" footerTitle="Listen to each pitch in Practice or try to identify them in Challenge! (Note: A = 440 Hz for all courses)" id="6ke-TO-OH0">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AOu-jM-DzR">
                                         <rect key="frame" x="0.0" y="55" width="414" height="44"/>
@@ -44,7 +44,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="MpP-CL-sk6" kind="show" id="zOf-fu-prf"/>
+                                            <segue destination="ugw-0b-Rsq" kind="show" id="zOf-fu-prf"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="25F-NP-gBj">
@@ -69,13 +69,16 @@
                                                 <constraint firstItem="15h-9U-Q36" firstAttribute="bottom" secondItem="7nL-hz-txN" secondAttribute="bottomMargin" id="sIN-kJ-R1C"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="koP-IA-yYX" kind="show" id="rzw-GW-5VS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Scales" footerTitle="A = 440 Hz" id="uWY-Oz-D4u">
+                            <tableViewSection headerTitle="Scales" footerTitle="Coming soon" id="uWY-Oz-D4u">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="t3O-3J-WI0">
-                                        <rect key="frame" x="0.0" y="219" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="235" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t3O-3J-WI0" id="zLh-qN-1Xc">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -98,7 +101,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="58l-I2-TJc">
-                                        <rect key="frame" x="0.0" y="263" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="279" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="58l-I2-TJc" id="Rxr-7n-cgf">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -122,10 +125,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Intervals (Dyads)" footerTitle="A = 440 Hz" id="VhW-bZ-Lc5">
+                            <tableViewSection headerTitle="Intervals (Dyads)" footerTitle="Coming soon" id="VhW-bZ-Lc5">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OOy-1m-tFm">
-                                        <rect key="frame" x="0.0" y="382" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="398" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OOy-1m-tFm" id="T4K-KC-awZ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -148,7 +151,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="W94-5F-vif">
-                                        <rect key="frame" x="0.0" y="426" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="442" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W94-5F-vif" id="EHv-cq-Ba4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -172,10 +175,10 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Chords (Triads)" footerTitle="A = 440 Hz" id="csp-ue-QmB">
+                            <tableViewSection headerTitle="Chords (Triads)" footerTitle="Coming soon" id="csp-ue-QmB">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Oj4-1N-igm">
-                                        <rect key="frame" x="0.0" y="545" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="561" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oj4-1N-igm" id="P9U-aX-pqy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -198,7 +201,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4F3-kC-t3E">
-                                        <rect key="frame" x="0.0" y="589" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="605" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4F3-kC-t3E" id="XQi-1S-kbj">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
@@ -234,78 +237,6 @@
             </objects>
             <point key="canvasLocation" x="4407.1999999999998" y="-722.78860569715152"/>
         </scene>
-        <!--Play Sound View Controller-->
-        <scene sceneID="5Il-04-oNs">
-            <objects>
-                <viewController id="MpP-CL-sk6" customClass="PlaySoundViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MDM-0k-DV2"/>
-                        <viewControllerLayoutGuide type="bottom" id="459-CQ-Gdz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3VG-79-1A6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CSj-go-rml">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
-                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXp-Q1-yWt">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaceHolderNoteCollectionViewCell" id="JUo-OT-yse">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="MpP-CL-sk6" id="0xi-6P-2RX"/>
-                                    <outlet property="delegate" destination="MpP-CL-sk6" id="KZ0-S7-nNd"/>
-                                </connections>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-SV-ubK">
-                                <rect key="frame" x="25" y="651" width="364" height="60"/>
-                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="hzW-j7-FNO"/>
-                                </constraints>
-                                <state key="normal" title="Play">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playButtonPressed:" destination="MpP-CL-sk6" eventType="touchUpInside" id="nDa-BR-MYA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="VRz-SV-ubK" secondAttribute="trailing" constant="25" id="B5B-Fy-4gv"/>
-                            <constraint firstItem="VRz-SV-ubK" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" constant="25" id="FgO-D2-XCA"/>
-                            <constraint firstAttribute="trailing" secondItem="CSj-go-rml" secondAttribute="trailing" id="K2X-5r-kNn"/>
-                            <constraint firstAttribute="bottom" secondItem="VRz-SV-ubK" secondAttribute="bottom" constant="25" id="aLN-AH-h9G"/>
-                            <constraint firstItem="CSj-go-rml" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" id="aQg-L1-mbd"/>
-                            <constraint firstItem="VRz-SV-ubK" firstAttribute="top" secondItem="CSj-go-rml" secondAttribute="bottom" constant="25" id="hVE-Bt-Xdx"/>
-                            <constraint firstItem="CSj-go-rml" firstAttribute="top" secondItem="3VG-79-1A6" secondAttribute="top" id="mjB-W3-SC2"/>
-                            <constraint firstItem="VRz-SV-ubK" firstAttribute="centerX" secondItem="3VG-79-1A6" secondAttribute="centerX" id="s5Y-bX-ieo"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="collectionView" destination="CSj-go-rml" id="lgG-FI-izn"/>
-                        <outlet property="playButton" destination="VRz-SV-ubK" id="Doh-oo-XBR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fn6-tv-LaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5364" y="-723.68815592203907"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iud-sg-2DT">
             <objects>
@@ -323,6 +254,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UGC-Vz-eVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3468" y="-722.78860569715152"/>
+        </scene>
+        <!--PlaySounds-->
+        <scene sceneID="Kgt-nD-khH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlaySounds" id="ugw-0b-Rsq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bH-Tq-KDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4956" y="-916"/>
+        </scene>
+        <!--Challenge-->
+        <scene sceneID="Ean-wi-KSD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Challenge" id="koP-IA-yYX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nbR-iK-ZBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4956" y="-880"/>
         </scene>
     </scenes>
 </document>

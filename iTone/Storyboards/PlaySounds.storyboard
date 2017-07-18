@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MpP-CL-sk6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Sound View Controller-->
+        <scene sceneID="5Il-04-oNs">
+            <objects>
+                <viewController id="MpP-CL-sk6" customClass="PlaySoundViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MDM-0k-DV2"/>
+                        <viewControllerLayoutGuide type="bottom" id="459-CQ-Gdz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3VG-79-1A6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CSj-go-rml">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXp-Q1-yWt">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaceHolderNoteCollectionViewCell" id="JUo-OT-yse">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="MpP-CL-sk6" id="0xi-6P-2RX"/>
+                                    <outlet property="delegate" destination="MpP-CL-sk6" id="KZ0-S7-nNd"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-SV-ubK">
+                                <rect key="frame" x="25" y="651" width="364" height="60"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hzW-j7-FNO"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="MpP-CL-sk6" eventType="touchUpInside" id="nDa-BR-MYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VRz-SV-ubK" secondAttribute="trailing" constant="25" id="B5B-Fy-4gv"/>
+                            <constraint firstItem="VRz-SV-ubK" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" constant="25" id="FgO-D2-XCA"/>
+                            <constraint firstAttribute="trailing" secondItem="CSj-go-rml" secondAttribute="trailing" id="K2X-5r-kNn"/>
+                            <constraint firstAttribute="bottom" secondItem="VRz-SV-ubK" secondAttribute="bottom" constant="25" id="aLN-AH-h9G"/>
+                            <constraint firstItem="CSj-go-rml" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" id="aQg-L1-mbd"/>
+                            <constraint firstItem="VRz-SV-ubK" firstAttribute="top" secondItem="CSj-go-rml" secondAttribute="bottom" constant="25" id="hVE-Bt-Xdx"/>
+                            <constraint firstItem="CSj-go-rml" firstAttribute="top" secondItem="3VG-79-1A6" secondAttribute="top" id="mjB-W3-SC2"/>
+                            <constraint firstItem="VRz-SV-ubK" firstAttribute="centerX" secondItem="3VG-79-1A6" secondAttribute="centerX" id="s5Y-bX-ieo"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina5_5.fullscreen"/>
+                    <connections>
+                        <outlet property="collectionView" destination="CSj-go-rml" id="lgG-FI-izn"/>
+                        <outlet property="playButton" destination="VRz-SV-ubK" id="Doh-oo-XBR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fn6-tv-LaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5425" y="-1247"/>
+        </scene>
+    </scenes>
+</document>

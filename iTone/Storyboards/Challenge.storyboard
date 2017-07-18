@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d05-qf-sFo">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Countdown View Controller-->
+        <scene sceneID="Jgw-Th-i07">
+            <objects>
+                <viewController id="d05-qf-sFo" customClass="CountdownViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fTd-j5-4r5"/>
+                        <viewControllerLayoutGuide type="bottom" id="kUA-64-Ezw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bbW-ND-0el">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nqN-fb-Yhw">
+                                <rect key="frame" x="132" y="278.66666666666669" width="150" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="0at-fX-Qpa"/>
+                                    <constraint firstAttribute="width" constant="150" id="hE7-HX-6MW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nqN-fb-Yhw" firstAttribute="centerY" secondItem="bbW-ND-0el" secondAttribute="centerY" id="d6b-T2-cx2"/>
+                            <constraint firstItem="nqN-fb-Yhw" firstAttribute="centerX" secondItem="bbW-ND-0el" secondAttribute="centerX" id="xQa-pB-LH6"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina5_5.fullscreen"/>
+                    <connections>
+                        <outlet property="countdownLabel" destination="nqN-fb-Yhw" id="VMi-kB-tFU"/>
+                        <segue destination="cob-nB-cex" kind="show" identifier="toChallenge" id="lBx-rZ-ruz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T72-OF-dXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5369.5652173913049" y="-713.31521739130437"/>
+        </scene>
+        <!--Challenge View Controller-->
+        <scene sceneID="8au-Tr-CiL">
+            <objects>
+                <viewController id="cob-nB-cex" customClass="ChallengeViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mbM-7r-qsy"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ps-6W-OIJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RwR-cD-wKg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VE8-2a-tDB">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-IN-GlM">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-Gs-Z1X" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-dq-rSx" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qN9-Gs-Z1X" firstAttribute="width" secondItem="i2C-dq-rSx" secondAttribute="width" id="huY-i6-Zmh"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-M3-hfK">
+                                        <rect key="frame" x="0.0" y="112" width="414" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-2C-Bv4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-Gl-UPn" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wAq-2C-Bv4" firstAttribute="width" secondItem="S1t-Gl-UPn" secondAttribute="width" id="3mm-rM-hjj"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-Y4-YTD">
+                                        <rect key="frame" x="0.0" y="223.99999999999997" width="414" height="112.33333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-g8-2S5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112.33333333333331"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-OG-c5I" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="112.33333333333331"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jGU-g8-2S5" firstAttribute="width" secondItem="Gua-OG-c5I" secondAttribute="width" id="UVU-9T-XXp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-3u-jtW">
+                                        <rect key="frame" x="0.0" y="336.33333333333326" width="414" height="111.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-uK-OiD" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="111.66666666666669"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yda-AZ-8jq" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="111.66666666666669"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="bE6-uK-OiD" firstAttribute="width" secondItem="yda-AZ-8jq" secondAttribute="width" id="iTg-fG-H7A"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMZ-1C-jHa">
+                                        <rect key="frame" x="0.0" y="448" width="414" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-xB-IEB" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-ZN-kOf" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="9yW-xB-IEB" firstAttribute="width" secondItem="PCV-ZN-kOf" secondAttribute="width" id="J2h-zT-sdO"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fog-Hd-JBZ">
+                                        <rect key="frame" x="0.0" y="560" width="414" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91j-V0-gu4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-tq-bky" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="207" height="112"/>
+                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button">
+                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="91j-V0-gu4" firstAttribute="width" secondItem="RFB-tq-bky" secondAttribute="width" id="S8Q-Yv-DQF"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0ef-3u-jtW" secondAttribute="trailing" id="17C-a8-adK"/>
+                                    <constraint firstAttribute="trailing" secondItem="t0b-Y4-YTD" secondAttribute="trailing" id="1ys-q0-pDN"/>
+                                    <constraint firstAttribute="trailing" secondItem="SMZ-1C-jHa" secondAttribute="trailing" id="EnB-2D-RtG"/>
+                                    <constraint firstItem="ATW-IN-GlM" firstAttribute="height" secondItem="0ef-3u-jtW" secondAttribute="height" id="IoG-YO-yDN"/>
+                                    <constraint firstAttribute="trailing" secondItem="ATW-IN-GlM" secondAttribute="trailing" id="LBA-ON-eJo"/>
+                                    <constraint firstItem="ATW-IN-GlM" firstAttribute="height" secondItem="t0b-Y4-YTD" secondAttribute="height" id="Pha-Zz-crs"/>
+                                    <constraint firstItem="ATW-IN-GlM" firstAttribute="height" secondItem="7S8-M3-hfK" secondAttribute="height" id="Syh-Rd-3CV"/>
+                                    <constraint firstItem="ATW-IN-GlM" firstAttribute="height" secondItem="fog-Hd-JBZ" secondAttribute="height" id="VUz-eg-cIZ"/>
+                                    <constraint firstItem="ATW-IN-GlM" firstAttribute="height" secondItem="SMZ-1C-jHa" secondAttribute="height" id="cDW-mv-Vdk"/>
+                                    <constraint firstAttribute="trailing" secondItem="7S8-M3-hfK" secondAttribute="trailing" id="s7W-BJ-7Zt"/>
+                                    <constraint firstAttribute="trailing" secondItem="fog-Hd-JBZ" secondAttribute="trailing" id="zub-Dg-gks"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VE8-2a-tDB" secondAttribute="trailing" id="3nD-Nl-6le"/>
+                            <constraint firstItem="VE8-2a-tDB" firstAttribute="leading" secondItem="RwR-cD-wKg" secondAttribute="leading" id="4qW-dI-nav"/>
+                            <constraint firstAttribute="bottom" secondItem="VE8-2a-tDB" secondAttribute="bottom" id="TaA-zh-xJi"/>
+                            <constraint firstItem="VE8-2a-tDB" firstAttribute="top" secondItem="mbM-7r-qsy" secondAttribute="bottom" id="ZzW-b7-CE8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nv3-Zl-nEO">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="8FC-HZ-Jfd">
+                            <connections>
+                                <segue destination="sFp-Pf-m1a" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="eVD-EV-B3C"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r3L-DH-9RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sFp-Pf-m1a" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="6246" y="-713"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
@@ -38,6 +40,7 @@ class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(nib, forCellWithReuseIdentifier: Constants.collectionViewCell.noteCollectionViewCell)
+        playButton.layer.cornerRadius = 10
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -45,39 +48,51 @@ class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
         collectionView.setContentOffset(start, animated: false)
     }
     
+    var player: AVAudioPlayer?
+    
+    func playSound(pitch: String) {
+        let url = Bundle.main.url(forResource: pitch, withExtension: "m4a")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
     @IBAction func playButtonPressed(_ sender: UIButton) {
         let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
         switch pageNumber {
-        case 0:
-            print("Play C")
-        case 1:
-            print("Play B Sharp")
         case 2:
-            print("Play C")
+            playSound(pitch: Constants.pitches.middleC)
         case 3:
-            print("Play C Sharp")
+            playSound(pitch: Constants.pitches.cSharp)
         case 4:
-            print("Play D")
+            playSound(pitch: Constants.pitches.d)
         case 5:
-            print("Play E Flat")
+            playSound(pitch: Constants.pitches.eFlat)
         case 6:
-            print("Play E")
+            playSound(pitch: Constants.pitches.e)
         case 7:
-            print("Play F")
+            playSound(pitch: Constants.pitches.f)
         case 8:
-            print("Play F Sharp")
+            playSound(pitch: Constants.pitches.fSharp)
         case 9:
-            print("Play G")
+            playSound(pitch: Constants.pitches.g)
         case 10:
-            print("Play A Flat")
+            playSound(pitch: Constants.pitches.aFlat)
         case 11:
-            print("Play A")
+            playSound(pitch: Constants.pitches.a)
         case 12:
-            print("Play B Flat")
+            playSound(pitch: Constants.pitches.bFlat)
         case 13:
-            print("Play B")
+            playSound(pitch: Constants.pitches.b)
         case 14:
-            print("Play B Sharp/C")
+            playSound(pitch: Constants.pitches.highC)
         default:
             break
         }
