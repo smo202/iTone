@@ -11,8 +11,8 @@ import UIKit
 import AVFoundation
 
 class ChallengeViewController: UIViewController {
-    var soundValue: Int = 0
     var player: AVAudioPlayer?
+    static var soundValue: Int = 0
     
     func playSound(pitch: String) {
         let url = Bundle.main.url(forResource: pitch, withExtension: "m4a")!
@@ -32,47 +32,56 @@ class ChallengeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.soundValue = Int(arc4random_uniform(13))
+        ChallengeViewController.soundValue = Int(arc4random_uniform(13))
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        ChallengeViewController.soundValue = Int(arc4random_uniform(13))
     }
     
     func checkSoundValue(_ value: Int) {
-        if soundValue == value {
+        if ChallengeViewController.soundValue == value {
             print("Correct")
+            player?.stop()
+            performSegue(withIdentifier: Constants.Segues.correctAnswer, sender: self)
         } else {
             print("Wrong")
+            player?.stop()
+            performSegue(withIdentifier: Constants.Segues.wrongAnswer, sender: self)
         }
     }
 }
 
 extension ChallengeViewController {
     override func viewDidAppear(_ animated: Bool) {
-        switch soundValue {
+        switch ChallengeViewController.soundValue {
         case 0:
-            playSound(pitch: Constants.pitches.middleC)
+            playSound(pitch: Constants.Pitches.middleC)
         case 1:
-            playSound(pitch: Constants.pitches.cSharp)
+            playSound(pitch: Constants.Pitches.cSharp)
         case 2:
-            playSound(pitch: Constants.pitches.d)
+            playSound(pitch: Constants.Pitches.d)
         case 3:
-            playSound(pitch: Constants.pitches.eFlat)
+            playSound(pitch: Constants.Pitches.eFlat)
         case 4:
-            playSound(pitch: Constants.pitches.e)
+            playSound(pitch: Constants.Pitches.e)
         case 5:
-            playSound(pitch: Constants.pitches.f)
+            playSound(pitch: Constants.Pitches.f)
         case 6:
-            playSound(pitch: Constants.pitches.fSharp)
+            playSound(pitch: Constants.Pitches.fSharp)
         case 7:
-            playSound(pitch: Constants.pitches.g)
+            playSound(pitch: Constants.Pitches.g)
         case 8:
-            playSound(pitch: Constants.pitches.aFlat)
+            playSound(pitch: Constants.Pitches.aFlat)
         case 9:
-            playSound(pitch: Constants.pitches.a)
+            playSound(pitch: Constants.Pitches.a)
         case 10:
-            playSound(pitch: Constants.pitches.bFlat)
+            playSound(pitch: Constants.Pitches.bFlat)
         case 11:
-            playSound(pitch: Constants.pitches.b)
+            playSound(pitch: Constants.Pitches.b)
         case 12:
-            playSound(pitch: Constants.pitches.highC)
+            playSound(pitch: Constants.Pitches.highC)
         default:
             break
         }
@@ -81,10 +90,14 @@ extension ChallengeViewController {
 
 extension ChallengeViewController {
     @IBAction func cButtonPressed(_ sender: Any) {
-        if soundValue == 0 || soundValue == 12 {
+        if ChallengeViewController.soundValue == 0 || ChallengeViewController.soundValue == 12 {
             print("Correct")
+            player?.stop()
+            performSegue(withIdentifier: Constants.Segues.correctAnswer, sender: self)
         } else {
             print("Wrong")
+            player?.stop()
+            performSegue(withIdentifier: Constants.Segues.wrongAnswer, sender: self)
         }
     }
     

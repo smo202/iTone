@@ -262,11 +262,134 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="dYh-Jh-YqH" kind="show" identifier="correctAnswerSegue" id="7JM-2i-ptl"/>
+                        <segue destination="IHU-EV-vnh" kind="show" identifier="wrongAnswerSegue" id="7KF-ad-JON"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3L-DH-9RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="sFp-Pf-m1a" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6246" y="-713"/>
+        </scene>
+        <!--Wrong Answer View Controller-->
+        <scene sceneID="ICk-cM-RBm">
+            <objects>
+                <viewController id="IHU-EV-vnh" customClass="WrongAnswerViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W4h-O7-0Kb"/>
+                        <viewControllerLayoutGuide type="bottom" id="DNN-Pb-4jN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l2r-xy-SVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83P-Uf-3at">
+                                <rect key="frame" x="70" y="288.5" width="235" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The answer was: C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEy-QT-ad7">
+                                <rect key="frame" x="41" y="378.5" width="293.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-05-PCY">
+                                <rect key="frame" x="25" y="582" width="325" height="60"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="D3M-EW-oXU"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="IHU-EV-vnh" eventType="touchUpInside" id="S1T-yB-iIy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="WEy-QT-ad7" firstAttribute="top" secondItem="83P-Uf-3at" secondAttribute="bottom" id="57H-h8-ojj"/>
+                            <constraint firstItem="WEy-QT-ad7" firstAttribute="centerX" secondItem="l2r-xy-SVr" secondAttribute="centerX" id="8CI-hY-BSQ"/>
+                            <constraint firstItem="ogt-05-PCY" firstAttribute="leading" secondItem="l2r-xy-SVr" secondAttribute="leading" constant="25" id="Akk-hn-7cQ"/>
+                            <constraint firstItem="83P-Uf-3at" firstAttribute="centerY" secondItem="l2r-xy-SVr" secondAttribute="centerY" id="Mci-7V-86j"/>
+                            <constraint firstItem="83P-Uf-3at" firstAttribute="centerX" secondItem="l2r-xy-SVr" secondAttribute="centerX" id="QcA-Wa-gYD"/>
+                            <constraint firstItem="DNN-Pb-4jN" firstAttribute="top" secondItem="ogt-05-PCY" secondAttribute="bottom" constant="25" id="gZH-3o-utm"/>
+                            <constraint firstAttribute="trailing" secondItem="ogt-05-PCY" secondAttribute="trailing" constant="25" id="mEc-Xl-3Eb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="rb8-Qa-al4">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="NSW-SX-MIM">
+                            <connections>
+                                <segue destination="Pth-fk-VRF" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="UZz-9a-wjc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="answerLabel" destination="WEy-QT-ad7" id="PhD-JP-Jq3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZD-gb-aHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Pth-fk-VRF" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7132" y="-364.7676161919041"/>
+        </scene>
+        <!--Correct Answer View Controller-->
+        <scene sceneID="O6n-CN-Fot">
+            <objects>
+                <viewController id="dYh-Jh-YqH" customClass="CorrectAnswerViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YiX-j8-IEf"/>
+                        <viewControllerLayoutGuide type="bottom" id="i02-uk-hIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gYY-rB-Pet">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-0Q-MZf">
+                                <rect key="frame" x="57.5" y="288.5" width="260.5" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdJ-Rc-Myk">
+                                <rect key="frame" x="25" y="582" width="325" height="60"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Erd-uh-6wx"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="dYh-Jh-YqH" eventType="touchUpInside" id="c5T-MC-EFu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VdJ-Rc-Myk" secondAttribute="trailing" constant="25" id="T0I-4D-tgf"/>
+                            <constraint firstItem="DcM-0Q-MZf" firstAttribute="centerX" secondItem="gYY-rB-Pet" secondAttribute="centerX" id="eRi-N1-Gr1"/>
+                            <constraint firstItem="VdJ-Rc-Myk" firstAttribute="leading" secondItem="gYY-rB-Pet" secondAttribute="leading" constant="25" id="iNM-7z-qSY"/>
+                            <constraint firstItem="DcM-0Q-MZf" firstAttribute="centerY" secondItem="gYY-rB-Pet" secondAttribute="centerY" id="kKG-q3-EAM"/>
+                            <constraint firstItem="i02-uk-hIY" firstAttribute="top" secondItem="VdJ-Rc-Myk" secondAttribute="bottom" constant="25" id="xut-bA-LD2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3gt-b8-Yoz">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="Xt6-D5-vuo">
+                            <connections>
+                                <segue destination="9R4-9C-RYs" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="5OT-Wf-INf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E52-g4-ggA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9R4-9C-RYs" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="7151" y="-1090"/>
         </scene>
     </scenes>
 </document>

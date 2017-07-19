@@ -9,11 +9,11 @@
 import Foundation
 
 struct Constants {
-    struct collectionViewCell {
+    struct CollectionViewCell {
         static let noteCollectionViewCell = "NoteCollectionViewCell"
     }
     
-    struct pitches {
+    struct Pitches {
         static let middleC = "middle-c"
         static let aFlat = "a-flat"
         static let a = "a"
@@ -27,5 +27,10 @@ struct Constants {
         static let f = "f"
         static let g = "g"
         static let highC = "high-c"
+    }
+    
+    struct Segues {
+        static let correctAnswer = "correctAnswerSegue"
+        static let wrongAnswer = "wrongAnswerSegue"
     }
 }

@@ -15,7 +15,7 @@ class PlaySoundViewController: UIViewController {
     
     var player: AVAudioPlayer?
     
-    let nib = UINib(nibName: Constants.collectionViewCell.noteCollectionViewCell, bundle: nil)
+    let nib = UINib(nibName: Constants.CollectionViewCell.noteCollectionViewCell, bundle: nil)
     
     var arrayOfNoteCardItems: [NoteCardItem] = [
         NoteCardItem(image: #imageLiteral(resourceName: "treble-c")),
@@ -40,7 +40,7 @@ class PlaySoundViewController: UIViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(nib, forCellWithReuseIdentifier: Constants.collectionViewCell.noteCollectionViewCell)
+        collectionView.register(nib, forCellWithReuseIdentifier: Constants.CollectionViewCell.noteCollectionViewCell)
         playButton.layer.cornerRadius = 10
     }
     
@@ -69,31 +69,31 @@ extension PlaySoundViewController {
         let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
         switch pageNumber {
         case 2:
-            playSound(pitch: Constants.pitches.middleC)
+            playSound(pitch: Constants.Pitches.middleC)
         case 3:
-            playSound(pitch: Constants.pitches.cSharp)
+            playSound(pitch: Constants.Pitches.cSharp)
         case 4:
-            playSound(pitch: Constants.pitches.d)
+            playSound(pitch: Constants.Pitches.d)
         case 5:
-            playSound(pitch: Constants.pitches.eFlat)
+            playSound(pitch: Constants.Pitches.eFlat)
         case 6:
-            playSound(pitch: Constants.pitches.e)
+            playSound(pitch: Constants.Pitches.e)
         case 7:
-            playSound(pitch: Constants.pitches.f)
+            playSound(pitch: Constants.Pitches.f)
         case 8:
-            playSound(pitch: Constants.pitches.fSharp)
+            playSound(pitch: Constants.Pitches.fSharp)
         case 9:
-            playSound(pitch: Constants.pitches.g)
+            playSound(pitch: Constants.Pitches.g)
         case 10:
-            playSound(pitch: Constants.pitches.aFlat)
+            playSound(pitch: Constants.Pitches.aFlat)
         case 11:
-            playSound(pitch: Constants.pitches.a)
+            playSound(pitch: Constants.Pitches.a)
         case 12:
-            playSound(pitch: Constants.pitches.bFlat)
+            playSound(pitch: Constants.Pitches.bFlat)
         case 13:
-            playSound(pitch: Constants.pitches.b)
+            playSound(pitch: Constants.Pitches.b)
         case 14:
-            playSound(pitch: Constants.pitches.highC)
+            playSound(pitch: Constants.Pitches.highC)
         default:
             break
         }
@@ -125,7 +125,7 @@ extension PlaySoundViewController {
 
 extension PlaySoundViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.collectionViewCell.noteCollectionViewCell, for: indexPath) as! NoteCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.CollectionViewCell.noteCollectionViewCell, for: indexPath) as! NoteCollectionViewCell
         let noteCardItem = arrayOfNoteCardItems[indexPath.section]
         cell.imageView.image = noteCardItem.image
         

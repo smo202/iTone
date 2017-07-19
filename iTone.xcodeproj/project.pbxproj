@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1D331A1F1FF0210084493C /* CorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */; };
+		3C1D331C1F1FF0740084493C /* WrongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */; };
 		3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */; };
 		3C2957E31F1EA28D00D547B3 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */; };
 		3C2957E71F1EA82B00D547B3 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectAnswerViewController.swift; path = Controllers/CorrectAnswerViewController.swift; sourceTree = "<group>"; };
+		3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrongAnswerViewController.swift; path = Controllers/WrongAnswerViewController.swift; sourceTree = "<group>"; };
 		3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCardItem.swift; path = Models/NoteCardItem.swift; sourceTree = "<group>"; };
 		3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownViewController.swift; path = Controllers/CountdownViewController.swift; sourceTree = "<group>"; };
 		3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Challenge.storyboard; path = Storyboards/Challenge.storyboard; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */,
 				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
 				3C3AA2A71F1E921A00EF7316 /* ChallengeViewController.swift */,
+				3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */,
+				3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 			files = (
 				3C55C5EC1F19130F004FED66 /* NoteCollectionViewCell.swift in Sources */,
 				3C2957E31F1EA28D00D547B3 /* CountdownViewController.swift in Sources */,
+				3C1D331C1F1FF0740084493C /* WrongAnswerViewController.swift in Sources */,
 				3C3AA2A61F1E8D4B00EF7316 /* AnswerButtons.swift in Sources */,
 				3CF34DD91F16766400E5DF45 /* ViewController.swift in Sources */,
 				3C55C5E51F1911C6004FED66 /* PlaySoundViewController.swift in Sources */,
@@ -299,6 +306,7 @@
 				3CF34DC01F16721900E5DF45 /* AppDelegate.swift in Sources */,
 				3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */,
 				3CE1D13B1F1D7D6500A55D62 /* Constants.swift in Sources */,
+				3C1D331A1F1FF0210084493C /* CorrectAnswerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
