@@ -72,6 +72,9 @@
                                                 <state key="normal" title="B♯/C">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="hEy-5o-Omk"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-dq-rSx" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
@@ -79,6 +82,9 @@
                                                 <state key="normal" title="C♯/D♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="cSharpButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="wNN-gs-hfG"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -94,6 +100,9 @@
                                                 <state key="normal" title="D">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="dButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="jyR-9a-cbU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-Gl-UPn" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
@@ -101,6 +110,9 @@
                                                 <state key="normal" title="D♯/E♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="GZ6-AH-q3y"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -116,6 +128,9 @@
                                                 <state key="normal" title="E/F♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="eButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="oU2-PJ-Ka1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-OG-c5I" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="101"/>
@@ -123,6 +138,9 @@
                                                 <state key="normal" title="E♯/F">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="p2r-Cn-7FV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -138,6 +156,9 @@
                                                 <state key="normal" title="F♯/G♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fSharpButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="HUH-zb-yIA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yda-AZ-8jq" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
@@ -145,6 +166,9 @@
                                                 <state key="normal" title="G">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="gButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="7Cm-Af-6xB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -160,6 +184,9 @@
                                                 <state key="normal" title="G♯/A♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="aFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="twb-XN-Luh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-ZN-kOf" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
@@ -167,6 +194,9 @@
                                                 <state key="normal" title="A">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="aButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="ukc-eU-gLL"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -182,6 +212,9 @@
                                                 <state key="normal" title="A♯/B♭">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="bFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="ohL-dM-qqd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-tq-bky" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
@@ -189,6 +222,9 @@
                                                 <state key="normal" title="B">
                                                     <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="bButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="kHA-ui-133"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>

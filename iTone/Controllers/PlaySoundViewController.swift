@@ -8,9 +8,8 @@
 
 import UIKit
 import AVFoundation
-import AudioToolbox
 
-class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
+class PlaySoundViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var playButton: UIButton!
     
@@ -60,7 +59,7 @@ class PlaySoundViewController: UIViewController, UIGestureRecognizerDelegate {
             player.prepareToPlay()
             player.play()
         } catch let error as NSError {
-            print(error.description)
+            print(error.localizedDescription)
         }
     }
     
