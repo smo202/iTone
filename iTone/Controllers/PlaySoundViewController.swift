@@ -13,6 +13,8 @@ class PlaySoundViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var playButton: UIButton!
     
+    var player: AVAudioPlayer?
+    
     let nib = UINib(nibName: Constants.collectionViewCell.noteCollectionViewCell, bundle: nil)
     
     var arrayOfNoteCardItems: [NoteCardItem] = [
@@ -45,10 +47,10 @@ class PlaySoundViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let start = CGPoint(x: CGFloat(2) * collectionView.bounds.size.width, y: collectionView.contentOffset.y)
         collectionView.setContentOffset(start, animated: false)
-    }
-    
-    var player: AVAudioPlayer?
-    
+    }    
+}
+
+extension PlaySoundViewController {
     func playSound(pitch: String) {
         let url = Bundle.main.url(forResource: pitch, withExtension: "m4a")!
         
@@ -96,7 +98,9 @@ class PlaySoundViewController: UIViewController {
             break
         }
     }
-    
+}
+
+extension PlaySoundViewController {
     func checkIfAtEndOfNotes(current: Int, target: Int) -> Bool {
         return current == target
     }

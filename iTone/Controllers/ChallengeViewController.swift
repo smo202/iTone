@@ -35,6 +35,16 @@ class ChallengeViewController: UIViewController {
         self.soundValue = Int(arc4random_uniform(13))
     }
     
+    func checkSoundValue(_ value: Int) {
+        if soundValue == value {
+            print("Correct")
+        } else {
+            print("Wrong")
+        }
+    }
+}
+
+extension ChallengeViewController {
     override func viewDidAppear(_ animated: Bool) {
         switch soundValue {
         case 0:
@@ -67,15 +77,9 @@ class ChallengeViewController: UIViewController {
             break
         }
     }
-    
-    func checkSoundValue(_ value: Int) {
-        if soundValue == value {
-            print("Correct")
-        } else {
-            print("Wrong")
-        }
-    }
-    
+}
+
+extension ChallengeViewController {
     @IBAction func cButtonPressed(_ sender: Any) {
         if soundValue == 0 || soundValue == 12 {
             print("Correct")
