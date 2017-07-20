@@ -11,5 +11,4 @@ import UIKit
 
 class NoteCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
-    
 }

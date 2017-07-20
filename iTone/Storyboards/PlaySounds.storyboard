@@ -58,10 +58,17 @@
                                     <action selector="playButtonPressed:" destination="MpP-CL-sk6" eventType="touchUpInside" id="nDa-BR-MYA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left or right for more" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-3e-km8">
+                                <rect key="frame" x="85" y="486" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="VRz-SV-ubK" firstAttribute="top" secondItem="jhd-3e-km8" secondAttribute="bottom" constant="75" id="5cK-Bc-sgD"/>
                             <constraint firstAttribute="trailing" secondItem="VRz-SV-ubK" secondAttribute="trailing" constant="25" id="B5B-Fy-4gv"/>
                             <constraint firstItem="VRz-SV-ubK" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" constant="25" id="FgO-D2-XCA"/>
                             <constraint firstAttribute="trailing" secondItem="CSj-go-rml" secondAttribute="trailing" id="K2X-5r-kNn"/>
@@ -69,6 +76,7 @@
                             <constraint firstItem="CSj-go-rml" firstAttribute="leading" secondItem="3VG-79-1A6" secondAttribute="leading" id="aQg-L1-mbd"/>
                             <constraint firstItem="VRz-SV-ubK" firstAttribute="top" secondItem="CSj-go-rml" secondAttribute="bottom" constant="25" id="hVE-Bt-Xdx"/>
                             <constraint firstItem="CSj-go-rml" firstAttribute="top" secondItem="3VG-79-1A6" secondAttribute="top" id="mjB-W3-SC2"/>
+                            <constraint firstItem="jhd-3e-km8" firstAttribute="centerX" secondItem="3VG-79-1A6" secondAttribute="centerX" id="nEE-Kn-10T"/>
                             <constraint firstItem="VRz-SV-ubK" firstAttribute="centerX" secondItem="3VG-79-1A6" secondAttribute="centerX" id="s5Y-bX-ieo"/>
                         </constraints>
                     </view>
@@ -80,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fn6-tv-LaV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5425" y="-1247"/>
+            <point key="canvasLocation" x="5424.8000000000002" y="-1247.2263868065968"/>
         </scene>
     </scenes>
 </document>
