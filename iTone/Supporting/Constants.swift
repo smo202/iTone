@@ -32,5 +32,6 @@ struct Constants {
     struct Segues {
         static let correctAnswer = "correctAnswerSegue"
         static let wrongAnswer = "wrongAnswerSegue"
+        static let toApp = "toAppSegue"
     }
 }
