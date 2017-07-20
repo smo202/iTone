@@ -14,5 +14,6 @@ class AnswerButtons: UIButton {
         super.draw(rect)
         layer.borderWidth = 1.0
         layer.cornerRadius = 2
+        layer.borderColor = UIColor(red: 243/255, green: 156/255, blue: 18/255, alpha: 1.0).cgColor
     }
 }
