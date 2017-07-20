@@ -468,8 +468,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="dYh-Jh-YqH" kind="show" identifier="correctAnswerSegue" id="7JM-2i-ptl"/>
-                        <segue destination="IHU-EV-vnh" kind="show" identifier="wrongAnswerSegue" id="7KF-ad-JON"/>
+                        <segue destination="dYh-Jh-YqH" kind="show" identifier="correctAnswerSegue" animates="NO" id="7JM-2i-ptl"/>
+                        <segue destination="IHU-EV-vnh" kind="show" identifier="wrongAnswerSegue" animates="NO" id="7KF-ad-JON"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3L-DH-9RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
