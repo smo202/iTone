@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C042D611F214DAB00C9F129 /* high-a-flat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D561F214DAB00C9F129 /* high-a-flat.m4a */; };
+		3C042D621F214DAB00C9F129 /* high-a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D571F214DAB00C9F129 /* high-a.m4a */; };
+		3C042D631F214DAB00C9F129 /* high-b-flat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D581F214DAB00C9F129 /* high-b-flat.m4a */; };
+		3C042D641F214DAB00C9F129 /* high-b.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D591F214DAB00C9F129 /* high-b.m4a */; };
+		3C042D651F214DAB00C9F129 /* high-c-sharp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5A1F214DAB00C9F129 /* high-c-sharp.m4a */; };
+		3C042D661F214DAB00C9F129 /* high-d.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5B1F214DAB00C9F129 /* high-d.m4a */; };
+		3C042D671F214DAB00C9F129 /* high-e-flat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5C1F214DAB00C9F129 /* high-e-flat.m4a */; };
+		3C042D681F214DAB00C9F129 /* high-e.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5D1F214DAB00C9F129 /* high-e.m4a */; };
+		3C042D691F214DAB00C9F129 /* high-f-sharp.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5E1F214DAB00C9F129 /* high-f-sharp.m4a */; };
+		3C042D6A1F214DAB00C9F129 /* high-f.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D5F1F214DAB00C9F129 /* high-f.m4a */; };
+		3C042D6B1F214DAB00C9F129 /* high-g.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C042D601F214DAB00C9F129 /* high-g.m4a */; };
 		3C1D331A1F1FF0210084493C /* CorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */; };
 		3C1D331C1F1FF0740084493C /* WrongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */; };
 		3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */; };
@@ -43,6 +54,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C042D561F214DAB00C9F129 /* high-a-flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-a-flat.m4a"; sourceTree = "<group>"; };
+		3C042D571F214DAB00C9F129 /* high-a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-a.m4a"; sourceTree = "<group>"; };
+		3C042D581F214DAB00C9F129 /* high-b-flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-b-flat.m4a"; sourceTree = "<group>"; };
+		3C042D591F214DAB00C9F129 /* high-b.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-b.m4a"; sourceTree = "<group>"; };
+		3C042D5A1F214DAB00C9F129 /* high-c-sharp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-c-sharp.m4a"; sourceTree = "<group>"; };
+		3C042D5B1F214DAB00C9F129 /* high-d.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-d.m4a"; sourceTree = "<group>"; };
+		3C042D5C1F214DAB00C9F129 /* high-e-flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-e-flat.m4a"; sourceTree = "<group>"; };
+		3C042D5D1F214DAB00C9F129 /* high-e.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-e.m4a"; sourceTree = "<group>"; };
+		3C042D5E1F214DAB00C9F129 /* high-f-sharp.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-f-sharp.m4a"; sourceTree = "<group>"; };
+		3C042D5F1F214DAB00C9F129 /* high-f.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-f.m4a"; sourceTree = "<group>"; };
+		3C042D601F214DAB00C9F129 /* high-g.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "high-g.m4a"; sourceTree = "<group>"; };
 		3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectAnswerViewController.swift; path = Controllers/CorrectAnswerViewController.swift; sourceTree = "<group>"; };
 		3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrongAnswerViewController.swift; path = Controllers/WrongAnswerViewController.swift; sourceTree = "<group>"; };
 		3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCardItem.swift; path = Models/NoteCardItem.swift; sourceTree = "<group>"; };
@@ -110,6 +132,17 @@
 		3CDA2ECD1F1E590B003519DD /* iTone Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				3C042D561F214DAB00C9F129 /* high-a-flat.m4a */,
+				3C042D571F214DAB00C9F129 /* high-a.m4a */,
+				3C042D581F214DAB00C9F129 /* high-b-flat.m4a */,
+				3C042D591F214DAB00C9F129 /* high-b.m4a */,
+				3C042D5A1F214DAB00C9F129 /* high-c-sharp.m4a */,
+				3C042D5B1F214DAB00C9F129 /* high-d.m4a */,
+				3C042D5C1F214DAB00C9F129 /* high-e-flat.m4a */,
+				3C042D5D1F214DAB00C9F129 /* high-e.m4a */,
+				3C042D5E1F214DAB00C9F129 /* high-f-sharp.m4a */,
+				3C042D5F1F214DAB00C9F129 /* high-f.m4a */,
+				3C042D601F214DAB00C9F129 /* high-g.m4a */,
 				3CDA2EDA1F1E590B003519DD /* middle-c.m4a */,
 				3CDA2ECE1F1E590B003519DD /* a-flat.m4a */,
 				3CDA2ECF1F1E590B003519DD /* a.m4a */,
@@ -264,14 +297,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C042D681F214DAB00C9F129 /* high-e.m4a in Resources */,
+				3C042D6B1F214DAB00C9F129 /* high-g.m4a in Resources */,
 				3CDA2EE31F1E590B003519DD /* f-sharp.m4a in Resources */,
+				3C042D641F214DAB00C9F129 /* high-b.m4a in Resources */,
 				3CDA2EE01F1E590B003519DD /* d.m4a in Resources */,
 				3CDA2EDD1F1E590B003519DD /* b-flat.m4a in Resources */,
 				3C55C5EA1F1912F4004FED66 /* NoteCollectionViewCell.xib in Resources */,
 				3CDA2EE11F1E590B003519DD /* e-flat.m4a in Resources */,
+				3C042D691F214DAB00C9F129 /* high-f-sharp.m4a in Resources */,
 				3CDA2EE21F1E590B003519DD /* e.m4a in Resources */,
+				3C042D661F214DAB00C9F129 /* high-d.m4a in Resources */,
+				3C042D671F214DAB00C9F129 /* high-e-flat.m4a in Resources */,
+				3C042D651F214DAB00C9F129 /* high-c-sharp.m4a in Resources */,
 				3CDA2EE41F1E590B003519DD /* f.m4a in Resources */,
 				3CF34DDF1F16768F00E5DF45 /* LaunchScreen.storyboard in Resources */,
+				3C042D631F214DAB00C9F129 /* high-b-flat.m4a in Resources */,
 				3CDA2EDE1F1E590B003519DD /* b.m4a in Resources */,
 				3CF34DCA1F16721900E5DF45 /* Assets.xcassets in Resources */,
 				3C2957E71F1EA82B00D547B3 /* Challenge.storyboard in Resources */,
@@ -279,9 +320,12 @@
 				3CDA2EDB1F1E590B003519DD /* a-flat.m4a in Resources */,
 				3CDA2EE51F1E590B003519DD /* g.m4a in Resources */,
 				3CDA2EDF1F1E590B003519DD /* c-sharp.m4a in Resources */,
+				3C042D611F214DAB00C9F129 /* high-a-flat.m4a in Resources */,
+				3C042D621F214DAB00C9F129 /* high-a.m4a in Resources */,
 				3CDA2ECA1F1E581E003519DD /* iTone Sounds in Resources */,
 				3C3AA2A21F1E64EF00EF7316 /* PlaySounds.storyboard in Resources */,
 				3CDA2EE71F1E590B003519DD /* middle-c.m4a in Resources */,
+				3C042D6A1F214DAB00C9F129 /* high-f.m4a in Resources */,
 				3CDA2EE61F1E590B003519DD /* high-c.m4a in Resources */,
 				3CF34DE01F16768F00E5DF45 /* Main.storyboard in Resources */,
 			);
