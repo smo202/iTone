@@ -43,6 +43,8 @@ class WrongAnswerViewController: UIViewController {
         default:
             break
         }
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 239/255, green: 76/255, blue: 52/255, alpha: 1.0)
     }
     
     @IBAction func nextButtonPressed(_ sender: Any) {

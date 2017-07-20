@@ -36,7 +36,7 @@ class ChallengeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 243/255, green: 156/255, blue: 18/255, alpha: 1.0)
         ChallengeViewController.soundValue = Int(arc4random_uniform(13))
     }
     

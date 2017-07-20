@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d05-qf-sFo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d05-qf-sFo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,11 +28,11 @@
                                     <constraint firstAttribute="width" constant="150" id="hE7-HX-6MW"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nqN-fb-Yhw" firstAttribute="centerY" secondItem="bbW-ND-0el" secondAttribute="centerY" id="d6b-T2-cx2"/>
                             <constraint firstItem="nqN-fb-Yhw" firstAttribute="centerX" secondItem="bbW-ND-0el" secondAttribute="centerX" id="xQa-pB-LH6"/>
@@ -66,21 +66,65 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-IN-GlM">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-Gs-Z1X" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qN9-Gs-Z1X" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="B♯/C">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="B">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/C">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="cButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="hEy-5o-Omk"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-dq-rSx" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2C-dq-rSx" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="C♯/D♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="C">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/D">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="cSharpButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="wNN-gs-hfG"/>
@@ -94,21 +138,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7S8-M3-hfK">
                                         <rect key="frame" x="0.0" y="100.5" width="375" height="100.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-2C-Bv4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wAq-2C-Bv4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="D">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="D">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="dButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="jyR-9a-cbU"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-Gl-UPn" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-Gl-UPn" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="D♯/E♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="D">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/E">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="eFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="GZ6-AH-q3y"/>
@@ -122,21 +198,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0b-Y4-YTD">
                                         <rect key="frame" x="0.0" y="201" width="375" height="101"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-g8-2S5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGU-g8-2S5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="101"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="E/F♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="E/F">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="eButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="oU2-PJ-Ka1"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-OG-c5I" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gua-OG-c5I" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="101"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="E♯/F">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="E">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/F">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="fButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="p2r-Cn-7FV"/>
@@ -150,21 +258,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ef-3u-jtW">
                                         <rect key="frame" x="0.0" y="302" width="375" height="100"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-uK-OiD" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE6-uK-OiD" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="100"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="F♯/G♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="F">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/G">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="fSharpButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="HUH-zb-yIA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yda-AZ-8jq" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yda-AZ-8jq" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="G">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="G">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="gButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="7Cm-Af-6xB"/>
@@ -178,21 +318,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMZ-1C-jHa">
                                         <rect key="frame" x="0.0" y="402" width="375" height="100.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-xB-IEB" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9yW-xB-IEB" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="G♯/A♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="G">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/A">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="aFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="twb-XN-Luh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-ZN-kOf" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-ZN-kOf" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="A">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="A">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="aButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="ukc-eU-gLL"/>
@@ -206,21 +378,53 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fog-Hd-JBZ">
                                         <rect key="frame" x="0.0" y="502.5" width="375" height="100.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91j-V0-gu4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="91j-V0-gu4" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="A♯/B♭">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="A">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♯">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="/B">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="♭">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="HiraginoSans-W4"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="bFlatButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="ohL-dM-qqd"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-tq-bky" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RFB-tq-bky" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
                                                 <rect key="frame" x="187.5" y="0.0" width="187.5" height="100.5"/>
-                                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" title="B">
-                                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.97647058823529409" green="0.74901960784313726" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="B">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </state>
                                                 <connections>
                                                     <action selector="bButtonPressed:" destination="cob-nB-cex" eventType="touchUpInside" id="kHA-ui-133"/>
@@ -247,7 +451,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VE8-2a-tDB" secondAttribute="trailing" id="3nD-Nl-6le"/>
                             <constraint firstItem="VE8-2a-tDB" firstAttribute="leading" secondItem="RwR-cD-wKg" secondAttribute="leading" id="4qW-dI-nav"/>
@@ -257,6 +461,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="nv3-Zl-nEO">
                         <barButtonItem key="leftBarButtonItem" title="Quit" id="8FC-HZ-Jfd">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="sFp-Pf-m1a" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="eVD-EV-B3C"/>
                             </connections>
@@ -287,30 +492,30 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wrong!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83P-Uf-3at">
                                 <rect key="frame" x="70" y="288.5" width="235" height="90"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The answer was: C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEy-QT-ad7">
                                 <rect key="frame" x="41" y="378.5" width="293.5" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-05-PCY">
                                 <rect key="frame" x="25" y="582" width="325" height="60"/>
-                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.29803921568627451" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="D3M-EW-oXU"/>
                                 </constraints>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="IHU-EV-vnh" eventType="touchUpInside" id="S1T-yB-iIy"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.28235294117647058" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="WEy-QT-ad7" firstAttribute="top" secondItem="83P-Uf-3at" secondAttribute="bottom" id="57H-h8-ojj"/>
                             <constraint firstItem="WEy-QT-ad7" firstAttribute="centerX" secondItem="l2r-xy-SVr" secondAttribute="centerX" id="8CI-hY-BSQ"/>
@@ -323,6 +528,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rb8-Qa-al4">
                         <barButtonItem key="leftBarButtonItem" title="Quit" id="NSW-SX-MIM">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="Pth-fk-VRF" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="UZz-9a-wjc"/>
                             </connections>
@@ -352,24 +558,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-0Q-MZf">
                                 <rect key="frame" x="57.5" y="288.5" width="260.5" height="90"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <color key="textColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdJ-Rc-Myk">
                                 <rect key="frame" x="25" y="582" width="325" height="60"/>
-                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.69411764705882351" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Erd-uh-6wx"/>
                                 </constraints>
                                 <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="dYh-Jh-YqH" eventType="touchUpInside" id="c5T-MC-EFu"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1803921568627451" green="0.80000000000000004" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VdJ-Rc-Myk" secondAttribute="trailing" constant="25" id="T0I-4D-tgf"/>
                             <constraint firstItem="DcM-0Q-MZf" firstAttribute="centerX" secondItem="gYY-rB-Pet" secondAttribute="centerX" id="eRi-N1-Gr1"/>
@@ -380,6 +586,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="3gt-b8-Yoz">
                         <barButtonItem key="leftBarButtonItem" title="Quit" id="Xt6-D5-vuo">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="9R4-9C-RYs" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="5OT-Wf-INf"/>
                             </connections>
