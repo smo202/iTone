@@ -11,6 +11,7 @@ import Foundation
 struct Constants {
     struct CollectionViewCell {
         static let noteCollectionViewCell = "NoteCollectionViewCell"
+        static let scaleCollectionViewCell = "ScaleCollectionViewCell"
     }
     
     struct Pitches {

@@ -47,7 +47,7 @@
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-SV-ubK">
                                 <rect key="frame" x="25" y="582" width="325" height="60"/>
-                                <color key="backgroundColor" red="0.95294117647058818" green="0.64423985083159208" blue="0.13254584891914084" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.57647058823529407" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="hzW-j7-FNO"/>
                                 </constraints>

@@ -30,6 +30,7 @@
 		3C55C5E51F1911C6004FED66 /* PlaySoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */; };
 		3C55C5EA1F1912F4004FED66 /* NoteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */; };
 		3C55C5EC1F19130F004FED66 /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */; };
+		3C6DA3361F26325500C935E1 /* ScaleCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6DA3351F26325500C935E1 /* ScaleCardItem.swift */; };
 		3CDA2ECA1F1E581E003519DD /* iTone Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA2EC91F1E581E003519DD /* iTone Sounds */; };
 		3CDA2EDB1F1E590B003519DD /* a-flat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA2ECE1F1E590B003519DD /* a-flat.m4a */; };
 		3CDA2EDC1F1E590B003519DD /* a.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3CDA2ECF1F1E590B003519DD /* a.m4a */; };
@@ -51,6 +52,9 @@
 		3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3CF34DDA1F16767D00E5DF45 /* iTone.xcdatamodeld */; };
 		3CF34DDF1F16768F00E5DF45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DDD1F16768F00E5DF45 /* LaunchScreen.storyboard */; };
 		3CF34DE01F16768F00E5DF45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CF34DDE1F16768F00E5DF45 /* Main.storyboard */; };
+		3CF7385B1F2288350050046D /* ScalesPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */; };
+		3CF7385E1F2290790050046D /* ScaleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7385C1F2290790050046D /* ScaleCollectionViewCell.swift */; };
+		3CF7385F1F2290790050046D /* ScaleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF7385D1F2290790050046D /* ScaleCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +81,7 @@
 		3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundViewController.swift; path = Controllers/PlaySoundViewController.swift; sourceTree = "<group>"; };
 		3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCollectionViewCell.xib; path = XIBS/NoteCollectionViewCell.xib; sourceTree = "<group>"; };
 		3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCollectionViewCell.swift; path = XIBS/NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C6DA3351F26325500C935E1 /* ScaleCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaleCardItem.swift; path = Models/ScaleCardItem.swift; sourceTree = "<group>"; };
 		3CDA2EC91F1E581E003519DD /* iTone Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "iTone Sounds"; path = "../iTone Sounds"; sourceTree = "<group>"; };
 		3CDA2ECE1F1E590B003519DD /* a-flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a-flat.m4a"; sourceTree = "<group>"; };
 		3CDA2ECF1F1E590B003519DD /* a.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.m4a; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		3CF34DDB1F16767D00E5DF45 /* iTone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iTone.xcdatamodel; sourceTree = "<group>"; };
 		3CF34DDD1F16768F00E5DF45 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CF34DDE1F16768F00E5DF45 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScalesPracticeViewController.swift; path = Controllers/ScalesPracticeViewController.swift; sourceTree = "<group>"; };
+		3CF7385C1F2290790050046D /* ScaleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaleCollectionViewCell.swift; path = XIBS/ScaleCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CF7385D1F2290790050046D /* ScaleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScaleCollectionViewCell.xib; path = XIBS/ScaleCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,8 @@
 			children = (
 				3C55C5E91F1912F4004FED66 /* NoteCollectionViewCell.xib */,
 				3C55C5EB1F19130F004FED66 /* NoteCollectionViewCell.swift */,
+				3CF7385C1F2290790050046D /* ScaleCollectionViewCell.swift */,
+				3CF7385D1F2290790050046D /* ScaleCollectionViewCell.xib */,
 			);
 			name = XIBS;
 			sourceTree = "<group>";
@@ -219,6 +229,7 @@
 				3CF34DDA1F16767D00E5DF45 /* iTone.xcdatamodeld */,
 				3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */,
 				3C3AA2A51F1E8D4B00EF7316 /* AnswerButtons.swift */,
+				3C6DA3351F26325500C935E1 /* ScaleCardItem.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -229,10 +240,11 @@
 				3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */,
 				3CF34DD81F16766400E5DF45 /* ViewController.swift */,
 				3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */,
-				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
 				3C3AA2A71F1E921A00EF7316 /* ChallengeViewController.swift */,
 				3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */,
 				3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */,
+				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
+				3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -324,6 +336,7 @@
 				3C042D621F214DAB00C9F129 /* high-a.m4a in Resources */,
 				3CDA2ECA1F1E581E003519DD /* iTone Sounds in Resources */,
 				3C3AA2A21F1E64EF00EF7316 /* PlaySounds.storyboard in Resources */,
+				3CF7385F1F2290790050046D /* ScaleCollectionViewCell.xib in Resources */,
 				3CDA2EE71F1E590B003519DD /* middle-c.m4a in Resources */,
 				3C042D6A1F214DAB00C9F129 /* high-f.m4a in Resources */,
 				3CDA2EE61F1E590B003519DD /* high-c.m4a in Resources */,
@@ -350,7 +363,10 @@
 				3CF34DC01F16721900E5DF45 /* AppDelegate.swift in Sources */,
 				3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */,
 				3CE1D13B1F1D7D6500A55D62 /* Constants.swift in Sources */,
+				3CF7385B1F2288350050046D /* ScalesPracticeViewController.swift in Sources */,
+				3CF7385E1F2290790050046D /* ScaleCollectionViewCell.swift in Sources */,
 				3C1D331A1F1FF0210084493C /* CorrectAnswerViewController.swift in Sources */,
+				3C6DA3361F26325500C935E1 /* ScaleCardItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
