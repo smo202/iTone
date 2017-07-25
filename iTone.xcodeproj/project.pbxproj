@@ -69,6 +69,7 @@
 		3CF7385B1F2288350050046D /* ScalesPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */; };
 		3CF7385E1F2290790050046D /* ScaleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7385C1F2290790050046D /* ScaleCollectionViewCell.swift */; };
 		3CF7385F1F2290790050046D /* ScaleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CF7385D1F2290790050046D /* ScaleCollectionViewCell.xib */; };
+		3CFBC26A1F27D164008F4D44 /* ScalesChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFBC2691F27D164008F4D44 /* ScalesChallengeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +137,7 @@
 		3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScalesPracticeViewController.swift; path = Controllers/ScalesPracticeViewController.swift; sourceTree = "<group>"; };
 		3CF7385C1F2290790050046D /* ScaleCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaleCollectionViewCell.swift; path = XIBS/ScaleCollectionViewCell.swift; sourceTree = "<group>"; };
 		3CF7385D1F2290790050046D /* ScaleCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScaleCollectionViewCell.xib; path = XIBS/ScaleCollectionViewCell.xib; sourceTree = "<group>"; };
+		3CFBC2691F27D164008F4D44 /* ScalesChallengeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScalesChallengeViewController.swift; path = Controllers/ScalesChallengeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,11 +284,12 @@
 				3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */,
 				3CF34DD81F16766400E5DF45 /* ViewController.swift */,
 				3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */,
-				3C3AA2A71F1E921A00EF7316 /* ChallengeViewController.swift */,
 				3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */,
 				3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */,
 				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
 				3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */,
+				3C3AA2A71F1E921A00EF7316 /* ChallengeViewController.swift */,
+				3CFBC2691F27D164008F4D44 /* ScalesChallengeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFBC26A1F27D164008F4D44 /* ScalesChallengeViewController.swift in Sources */,
 				3C55C5EC1F19130F004FED66 /* NoteCollectionViewCell.swift in Sources */,
 				3C2957E31F1EA28D00D547B3 /* CountdownViewController.swift in Sources */,
 				3C1D331C1F1FF0740084493C /* WrongAnswerViewController.swift in Sources */,

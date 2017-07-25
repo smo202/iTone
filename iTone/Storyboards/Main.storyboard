@@ -422,10 +422,10 @@
             </objects>
             <point key="canvasLocation" x="5519" y="-723"/>
         </scene>
-        <!--View Controller-->
+        <!--Scales Challenge View Controller-->
         <scene sceneID="8Gg-OH-d7U">
             <objects>
-                <viewController id="ZLh-km-CL7" sceneMemberID="viewController">
+                <viewController id="ZLh-km-CL7" customClass="ScalesChallengeViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZi-5G-7X0"/>
                         <viewControllerLayoutGuide type="bottom" id="Hxr-4f-RPn"/>
@@ -435,10 +435,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcG-lh-MbA">
-                                <rect key="frame" x="0.0" y="64" width="414" height="168"/>
+                                <rect key="frame" x="0.0" y="63.999999999999986" width="414" height="140.66666666666663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r63-YV-02W" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="140.66666666666666"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -451,9 +451,12 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="ionianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="CCf-qx-2Bi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hoy-Au-mhW" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="207" y="0.0" width="207" height="140.66666666666666"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -466,6 +469,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="aeolianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="H5T-aU-PWd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -473,10 +479,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-Dx-Old">
-                                <rect key="frame" x="0.0" y="232" width="414" height="168"/>
+                                <rect key="frame" x="0.0" y="204.66666666666669" width="414" height="140.66666666666669"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-Mo-g2D" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="140.66666666666666"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -489,9 +495,12 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="harmonicPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="Xi4-hk-K0D"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsp-IV-vx6" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="207" y="0.0" width="207" height="140.66666666666666"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -504,6 +513,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="dorianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="H1y-yj-I1w"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -511,10 +523,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlO-cQ-ToB">
-                                <rect key="frame" x="0.0" y="400" width="414" height="168"/>
+                                <rect key="frame" x="0.0" y="345.33333333333331" width="414" height="140.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-VA-NBu" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="140.33333333333337"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -527,9 +539,12 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="phrygianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="Z3c-bb-84D"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMa-SW-sP5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="207" y="0.0" width="207" height="140.33333333333337"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -542,6 +557,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="lydianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="cWl-mV-n0G"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -549,10 +567,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8A-I1-Q2n">
-                                <rect key="frame" x="0.0" y="568" width="414" height="168"/>
+                                <rect key="frame" x="0.0" y="485.66666666666674" width="414" height="140.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-sN-Awr" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="140.33333333333331"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -565,9 +583,12 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="mixolydianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="hik-i1-uJt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-Wc-yyc" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <rect key="frame" x="207" y="0.0" width="207" height="140.33333333333331"/>
                                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal">
                                             <attributedString key="attributedTitle">
@@ -580,12 +601,28 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <action selector="locrianPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="mT8-Pb-99k"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="IIb-sN-Awr" firstAttribute="width" secondItem="PAT-Wc-yyc" secondAttribute="width" id="NoU-ye-0Ar"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orV-w0-jvc">
+                                <rect key="frame" x="25" y="651" width="364" height="60"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.57647058823529407" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="j6h-go-KwM"/>
+                                </constraints>
+                                <state key="normal" title="Play Another Example">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgainPressed:" destination="ZLh-km-CL7" eventType="touchUpInside" id="NfQ-Z4-t21"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -593,27 +630,37 @@
                             <constraint firstAttribute="trailing" secondItem="o8A-I1-Q2n" secondAttribute="trailing" id="LKJ-mO-lg4"/>
                             <constraint firstItem="BlO-cQ-ToB" firstAttribute="top" secondItem="tqI-Dx-Old" secondAttribute="bottom" id="NR4-qv-Lw8"/>
                             <constraint firstItem="tqI-Dx-Old" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="Rt6-dy-IcR"/>
+                            <constraint firstAttribute="trailing" secondItem="orV-w0-jvc" secondAttribute="trailing" constant="25" id="UGe-7U-9Ug"/>
                             <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="tqI-Dx-Old" secondAttribute="height" id="UWJ-Mx-NO7"/>
                             <constraint firstAttribute="trailing" secondItem="tqI-Dx-Old" secondAttribute="trailing" id="WEh-jt-znD"/>
                             <constraint firstItem="NcG-lh-MbA" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="X4m-es-ImZ"/>
                             <constraint firstAttribute="trailing" secondItem="BlO-cQ-ToB" secondAttribute="trailing" id="aMY-cU-Dy0"/>
                             <constraint firstAttribute="trailing" secondItem="NcG-lh-MbA" secondAttribute="trailing" id="bpR-ts-Vne"/>
+                            <constraint firstItem="orV-w0-jvc" firstAttribute="top" secondItem="o8A-I1-Q2n" secondAttribute="bottom" constant="25" id="cRJ-IF-I3t"/>
                             <constraint firstItem="NcG-lh-MbA" firstAttribute="top" secondItem="bZi-5G-7X0" secondAttribute="bottom" id="dqr-hk-pbj"/>
+                            <constraint firstItem="orV-w0-jvc" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" constant="25" id="j6m-f5-N5J"/>
                             <constraint firstItem="o8A-I1-Q2n" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="lF6-eL-yor"/>
                             <constraint firstItem="o8A-I1-Q2n" firstAttribute="top" secondItem="BlO-cQ-ToB" secondAttribute="bottom" id="lay-mn-7SD"/>
                             <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="o8A-I1-Q2n" secondAttribute="height" id="uRN-H7-cDt"/>
+                            <constraint firstItem="Hxr-4f-RPn" firstAttribute="top" secondItem="orV-w0-jvc" secondAttribute="bottom" constant="25" id="w1h-ii-0IA"/>
                             <constraint firstItem="tqI-Dx-Old" firstAttribute="top" secondItem="NcG-lh-MbA" secondAttribute="bottom" id="wU7-tz-idL"/>
-                            <constraint firstAttribute="bottom" secondItem="o8A-I1-Q2n" secondAttribute="bottom" id="xVe-1j-avg"/>
                             <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="BlO-cQ-ToB" secondAttribute="height" id="yUZ-dd-DbB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="yNd-zs-Cxb">
                         <barButtonItem key="leftBarButtonItem" title="Quit" id="1Of-fz-vMe">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Dj9-rM-DRs" kind="unwind" unwindAction="unwindToCourseSelectionTableViewController:" id="Fak-jc-djR"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="playAgainButton" destination="orV-w0-jvc" id="nON-f0-RNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UsU-iG-lX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Dj9-rM-DRs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6428" y="-723"/>
         </scene>
