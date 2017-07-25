@@ -153,6 +153,9 @@
                                                 <constraint firstItem="ADI-cH-WIK" firstAttribute="leading" secondItem="Rxr-7n-cgf" secondAttribute="leadingMargin" constant="5" id="th0-2k-TtM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Age-sR-HQI" kind="show" id="pwz-9k-ZVW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -226,7 +229,7 @@
                                         <rect key="frame" x="0.0" y="698" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oj4-1N-igm" id="P9U-aX-pqy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-KH-J0Z">
@@ -256,7 +259,7 @@
                                         <rect key="frame" x="0.0" y="768" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4F3-kC-t3E" id="XQi-1S-kbj">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeo-AQ-TDp">
@@ -362,7 +365,7 @@
                 <viewControllerPlaceholder storyboardName="PlaySounds" id="ugw-0b-Rsq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bH-Tq-KDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4956" y="-916"/>
+            <point key="canvasLocation" x="4949" y="-898"/>
         </scene>
         <!--Challenge-->
         <scene sceneID="Ean-wi-KSD">
@@ -370,7 +373,7 @@
                 <viewControllerPlaceholder storyboardName="Challenge" id="koP-IA-yYX" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbR-iK-ZBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4956" y="-832"/>
+            <point key="canvasLocation" x="4941" y="-842"/>
         </scene>
         <!--ScalesPracticeViewController-->
         <scene sceneID="xx4-Ox-lGc">
@@ -378,7 +381,241 @@
                 <viewControllerPlaceholder storyboardName="ScalesPracticeViewController" id="RBl-Jo-yP2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsN-jy-7kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5447.826086956522" y="-723.09782608695662"/>
+            <point key="canvasLocation" x="5026" y="-716"/>
+        </scene>
+        <!--Countdown View Controller-->
+        <scene sceneID="skE-jy-cbH">
+            <objects>
+                <viewController id="Age-sR-HQI" customClass="CountdownViewController" customModule="iTone" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BPY-7M-ldY"/>
+                        <viewControllerLayoutGuide type="bottom" id="V2p-zm-Ad5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q2c-lh-hyg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncZ-13-Wvv">
+                                <rect key="frame" x="132" y="278" width="150" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="dCK-xi-seb"/>
+                                    <constraint firstAttribute="width" constant="150" id="lPH-aZ-CH3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94383245709999997" green="0.60921615360000003" blue="0.16173617539999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ncZ-13-Wvv" firstAttribute="centerY" secondItem="Q2c-lh-hyg" secondAttribute="centerY" id="Kkk-jY-lVd"/>
+                            <constraint firstItem="ncZ-13-Wvv" firstAttribute="centerX" secondItem="Q2c-lh-hyg" secondAttribute="centerX" id="lXa-oA-1th"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="countdownLabel" destination="ncZ-13-Wvv" id="tlO-BZ-DRW"/>
+                        <segue destination="ZLh-km-CL7" kind="show" identifier="toChallenge" id="O1s-c6-mdW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8jI-xL-oqD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5519" y="-723"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8Gg-OH-d7U">
+            <objects>
+                <viewController id="ZLh-km-CL7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZi-5G-7X0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hxr-4f-RPn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oAb-iO-SZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcG-lh-MbA">
+                                <rect key="frame" x="0.0" y="64" width="414" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r63-YV-02W" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Ionian Mode/   Major Scale">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hoy-Au-mhW" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Aeolian Mode/  Natural Minor    Scale">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hoy-Au-mhW" firstAttribute="width" secondItem="r63-YV-02W" secondAttribute="width" id="FqS-XH-mbd"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqI-Dx-Old">
+                                <rect key="frame" x="0.0" y="232" width="414" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tM4-Mo-g2D" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Harmonic Minor Scale">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsp-IV-vx6" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Dorian Mode">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hsp-IV-vx6" firstAttribute="width" secondItem="tM4-Mo-g2D" secondAttribute="width" id="wFs-3K-woI"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlO-cQ-ToB">
+                                <rect key="frame" x="0.0" y="400" width="414" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZo-VA-NBu" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Phrygian Mode">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TMa-SW-sP5" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Lydian Mode">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="mZo-VA-NBu" firstAttribute="width" secondItem="TMa-SW-sP5" secondAttribute="width" id="FkF-OL-KtY"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8A-I1-Q2n">
+                                <rect key="frame" x="0.0" y="568" width="414" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-sN-Awr" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Mixolydian          Mode">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PAT-Wc-yyc" customClass="AnswerButtons" customModule="iTone" customModuleProvider="target">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="168"/>
+                                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Locrian Mode">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <font key="NSFont" size="26" name="Futura-Medium"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="IIb-sN-Awr" firstAttribute="width" secondItem="PAT-Wc-yyc" secondAttribute="width" id="NoU-ye-0Ar"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BlO-cQ-ToB" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="BGY-eX-Jyh"/>
+                            <constraint firstAttribute="trailing" secondItem="o8A-I1-Q2n" secondAttribute="trailing" id="LKJ-mO-lg4"/>
+                            <constraint firstItem="BlO-cQ-ToB" firstAttribute="top" secondItem="tqI-Dx-Old" secondAttribute="bottom" id="NR4-qv-Lw8"/>
+                            <constraint firstItem="tqI-Dx-Old" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="Rt6-dy-IcR"/>
+                            <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="tqI-Dx-Old" secondAttribute="height" id="UWJ-Mx-NO7"/>
+                            <constraint firstAttribute="trailing" secondItem="tqI-Dx-Old" secondAttribute="trailing" id="WEh-jt-znD"/>
+                            <constraint firstItem="NcG-lh-MbA" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="X4m-es-ImZ"/>
+                            <constraint firstAttribute="trailing" secondItem="BlO-cQ-ToB" secondAttribute="trailing" id="aMY-cU-Dy0"/>
+                            <constraint firstAttribute="trailing" secondItem="NcG-lh-MbA" secondAttribute="trailing" id="bpR-ts-Vne"/>
+                            <constraint firstItem="NcG-lh-MbA" firstAttribute="top" secondItem="bZi-5G-7X0" secondAttribute="bottom" id="dqr-hk-pbj"/>
+                            <constraint firstItem="o8A-I1-Q2n" firstAttribute="leading" secondItem="oAb-iO-SZp" secondAttribute="leading" id="lF6-eL-yor"/>
+                            <constraint firstItem="o8A-I1-Q2n" firstAttribute="top" secondItem="BlO-cQ-ToB" secondAttribute="bottom" id="lay-mn-7SD"/>
+                            <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="o8A-I1-Q2n" secondAttribute="height" id="uRN-H7-cDt"/>
+                            <constraint firstItem="tqI-Dx-Old" firstAttribute="top" secondItem="NcG-lh-MbA" secondAttribute="bottom" id="wU7-tz-idL"/>
+                            <constraint firstAttribute="bottom" secondItem="o8A-I1-Q2n" secondAttribute="bottom" id="xVe-1j-avg"/>
+                            <constraint firstItem="NcG-lh-MbA" firstAttribute="height" secondItem="BlO-cQ-ToB" secondAttribute="height" id="yUZ-dd-DbB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yNd-zs-Cxb">
+                        <barButtonItem key="leftBarButtonItem" title="Quit" id="1Of-fz-vMe">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UsU-iG-lX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6428" y="-723"/>
         </scene>
     </scenes>
 </document>
