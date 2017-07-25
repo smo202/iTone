@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3C1D331A1F1FF0210084493C /* CorrectAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */; };
 		3C1D331C1F1FF0740084493C /* WrongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */; };
+		3C2071721F277E0C003A04AA /* ScalesPracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */; };
 		3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */; };
 		3C2957E31F1EA28D00D547B3 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */; };
 		3C2957E71F1EA82B00D547B3 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */; };
@@ -73,6 +74,7 @@
 /* Begin PBXFileReference section */
 		3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CorrectAnswerViewController.swift; path = Controllers/CorrectAnswerViewController.swift; sourceTree = "<group>"; };
 		3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WrongAnswerViewController.swift; path = Controllers/WrongAnswerViewController.swift; sourceTree = "<group>"; };
+		3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScalesPracticeViewController.storyboard; path = Storyboards/ScalesPracticeViewController.storyboard; sourceTree = "<group>"; };
 		3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCardItem.swift; path = Models/NoteCardItem.swift; sourceTree = "<group>"; };
 		3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownViewController.swift; path = Controllers/CountdownViewController.swift; sourceTree = "<group>"; };
 		3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Challenge.storyboard; path = Storyboards/Challenge.storyboard; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			children = (
 				3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */,
 				3CF34DDE1F16768F00E5DF45 /* Main.storyboard */,
+				3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */,
 				3C3AA2A11F1E64EF00EF7316 /* PlaySounds.storyboard */,
 			);
 			name = Storyboards;
@@ -369,6 +372,7 @@
 				3C2B10701F26A59400D52CB0 /* short-high-c.m4a in Resources */,
 				3C2B10571F26A59400D52CB0 /* g.m4a in Resources */,
 				3C2B10521F26A59400D52CB0 /* d.m4a in Resources */,
+				3C2071721F277E0C003A04AA /* ScalesPracticeViewController.storyboard in Resources */,
 				3C2B10681F26A59400D52CB0 /* short-b.m4a in Resources */,
 				3CF34DCA1F16721900E5DF45 /* Assets.xcassets in Resources */,
 				3C2B10581F26A59400D52CB0 /* high-a-flat.m4a in Resources */,
