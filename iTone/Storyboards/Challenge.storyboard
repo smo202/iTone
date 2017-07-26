@@ -536,6 +536,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answerLabel" destination="WEy-QT-ad7" id="PhD-JP-Jq3"/>
+                        <outlet property="nextButton" destination="ogt-05-PCY" id="3Aw-BK-u6Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZD-gb-aHf" userLabel="First Responder" sceneMemberID="firstResponder"/>

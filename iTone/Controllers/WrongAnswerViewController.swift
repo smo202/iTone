@@ -10,7 +10,8 @@ import UIKit
 
 class WrongAnswerViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
-
+    @IBOutlet weak var nextButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         switch ChallengeViewController.soundValue {
@@ -43,7 +44,7 @@ class WrongAnswerViewController: UIViewController {
         default:
             break
         }
-        
+        nextButton.layer.cornerRadius = 10
         navigationController?.navigationBar.barTintColor = UIColor(red: 239/255, green: 76/255, blue: 52/255, alpha: 1.0)
     }
     

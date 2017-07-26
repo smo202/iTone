@@ -159,26 +159,26 @@ extension ScalesPracticeViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
-        switch pageNumber {
-        case 2:
+        let pageNumber = Double(collectionView.contentOffset.x / collectionView.frame.size.width)
+
+        if pageNumber >= 1.5 && pageNumber <= 2.5 {
             ScalesPracticeViewController.playSound(scale: "Ionian")
-        case 3:
+        } else if pageNumber >= 2.5 && pageNumber < 3.5 {
             ScalesPracticeViewController.playSound(scale: "Aeolian")
-        case 4:
+        } else if pageNumber >= 3.5 && pageNumber < 4.5 {
             ScalesPracticeViewController.playSound(scale: "Harmonic Minor")
-        case 5:
+        } else if pageNumber >= 4.5 && pageNumber < 5.5 {
             ScalesPracticeViewController.playSound(scale: "Dorian")
-        case 6:
+        } else if pageNumber >= 5.5 && pageNumber < 6.5 {
             ScalesPracticeViewController.playSound(scale: "Phrygian")
-        case 7:
+        } else if pageNumber >= 6.5 && pageNumber < 7.5 {
             ScalesPracticeViewController.playSound(scale: "Lydian")
-        case 8:
+        } else if pageNumber >= 7.5 && pageNumber < 8.5 {
             ScalesPracticeViewController.playSound(scale: "Mixolydian")
-        case 9:
+        } else if pageNumber >= 8.5 && pageNumber < 9.5 {
             ScalesPracticeViewController.playSound(scale: "Locrian")
-        default:
-            break
+        } else if pageNumber >= 9.5 && pageNumber < 10.5 {
+            ScalesPracticeViewController.playSound(scale: "Ionian")
         }
     }
 }

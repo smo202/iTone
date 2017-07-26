@@ -311,9 +311,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Goes Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yZ-8T-VC2">
-                                <rect key="frame" x="65" y="225" width="285.33333333333331" height="45.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TrainEar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yZ-8T-VC2">
+                                <rect key="frame" x="83.666666666666686" y="224.99999999999997" width="247" height="63.333333333333286"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -323,13 +323,21 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ear Trainer In Your Pocket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLk-5U-h8W">
+                                <rect key="frame" x="83" y="296" width="249.66666666666669" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.6705882352941176" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="I7t-7o-zMT" secondAttribute="bottom" constant="30" id="P5K-7f-nta"/>
+                            <constraint firstItem="YLk-5U-h8W" firstAttribute="centerX" secondItem="Dg5-zf-7ZG" secondAttribute="centerX" id="azW-Zj-9LG"/>
                             <constraint firstItem="5yZ-8T-VC2" firstAttribute="centerX" secondItem="Dg5-zf-7ZG" secondAttribute="centerX" id="cvo-5a-dlq"/>
                             <constraint firstItem="5yZ-8T-VC2" firstAttribute="top" secondItem="Dg5-zf-7ZG" secondAttribute="top" constant="225" id="f5g-Pw-wZ7"/>
+                            <constraint firstItem="YLk-5U-h8W" firstAttribute="top" secondItem="5yZ-8T-VC2" secondAttribute="bottom" constant="8" id="fNT-lB-vJo"/>
                             <constraint firstItem="I7t-7o-zMT" firstAttribute="centerX" secondItem="Dg5-zf-7ZG" secondAttribute="centerX" id="r6B-9Q-4Ha"/>
                         </constraints>
                     </view>
@@ -339,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3q-cT-6ru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562" y="-723"/>
+            <point key="canvasLocation" x="2560.8695652173915" y="-723.09782608695662"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iud-sg-2DT">

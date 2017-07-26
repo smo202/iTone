@@ -66,36 +66,36 @@ extension PlaySoundViewController {
     }
     
     @IBAction func playButtonPressed(_ sender: UIButton) {
-        let pageNumber = Int(collectionView.contentOffset.x / collectionView.frame.size.width)
-        switch pageNumber {
-        case 2:
+        let pageNumber = Double(collectionView.contentOffset.x / collectionView.frame.size.width)
+
+        if pageNumber >= 1.5 && pageNumber <= 2.5 {
             playSound(pitch: Constants.Pitches.middleC)
-        case 3:
+        } else if pageNumber >= 2.5 && pageNumber < 3.5 {
             playSound(pitch: Constants.Pitches.cSharp)
-        case 4:
+        } else if pageNumber >= 3.5 && pageNumber < 4.5 {
             playSound(pitch: Constants.Pitches.d)
-        case 5:
+        } else if pageNumber >= 4.5 && pageNumber < 5.5 {
             playSound(pitch: Constants.Pitches.eFlat)
-        case 6:
+        } else if pageNumber >= 5.5 && pageNumber < 6.5 {
             playSound(pitch: Constants.Pitches.e)
-        case 7:
+        } else if pageNumber >= 6.5 && pageNumber < 7.5 {
             playSound(pitch: Constants.Pitches.f)
-        case 8:
+        } else if pageNumber >= 7.5 && pageNumber < 8.5 {
             playSound(pitch: Constants.Pitches.fSharp)
-        case 9:
+        } else if pageNumber >= 8.5 && pageNumber < 9.5 {
             playSound(pitch: Constants.Pitches.g)
-        case 10:
+        } else if pageNumber >= 9.5 && pageNumber < 10.5 {
             playSound(pitch: Constants.Pitches.aFlat)
-        case 11:
+        } else if pageNumber >= 10.5 && pageNumber < 11.5 {
             playSound(pitch: Constants.Pitches.a)
-        case 12:
+        } else if pageNumber >= 11.5 && pageNumber < 12.5 {
             playSound(pitch: Constants.Pitches.bFlat)
-        case 13:
+        } else if pageNumber >= 12.5 && pageNumber < 13.5 {
             playSound(pitch: Constants.Pitches.b)
-        case 14:
+        } else if pageNumber >= 13.5 && pageNumber < 14.5 {
             playSound(pitch: Constants.Pitches.highC)
-        default:
-            break
+        } else if pageNumber >= 14.5 && pageNumber < 15.5 {
+            playSound(pitch: Constants.Pitches.middleC)
         }
     }
 }
