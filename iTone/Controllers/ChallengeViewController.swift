@@ -42,11 +42,9 @@ class ChallengeViewController: UIViewController {
     
     func checkSoundValue(_ value: Int) {
         if ChallengeViewController.soundValue == value {
-            print("Correct")
             player?.stop()
             performSegue(withIdentifier: Constants.Segues.correctAnswer, sender: self)
         } else {
-            print("Wrong")
             player?.stop()
             performSegue(withIdentifier: Constants.Segues.wrongAnswer, sender: self)
         }

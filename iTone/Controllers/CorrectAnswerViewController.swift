@@ -9,9 +9,11 @@
 import UIKit
 
 class CorrectAnswerViewController: UIViewController {
+    @IBOutlet weak var nextButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.layer.cornerRadius = 10
         navigationController?.navigationBar.barTintColor = UIColor(red: 0/255, green: 177/255, blue: 106/255, alpha: 1.0)
     }
     

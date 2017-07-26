@@ -23,5 +23,6 @@ class CourseSelectionTableViewController: UITableViewController {
     }
     
     @IBAction func unwindToCourseSelectionTableViewController(_ segue: UIStoryboardSegue) {
+        ScalesPracticeViewController.player?.pause()
     }
 }

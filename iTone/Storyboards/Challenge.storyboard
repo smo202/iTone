@@ -592,6 +592,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nextButton" destination="VdJ-Rc-Myk" id="XjP-k5-k0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E52-g4-ggA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9R4-9C-RYs" userLabel="Exit" sceneMemberID="exit"/>

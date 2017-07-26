@@ -12,6 +12,8 @@
 		3C2071721F277E0C003A04AA /* ScalesPracticeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */; };
 		3C2071741F277F80003A04AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2071731F277F80003A04AA /* Main.storyboard */; };
 		3C21E8001F1C4FF400FF3164 /* NoteCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */; };
+		3C27A2551F28D1AA00272ED7 /* ScalesWrongAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C27A2541F28D1AA00272ED7 /* ScalesWrongAnswerViewController.swift */; };
+		3C27A2571F28DAA900272ED7 /* ScalesChallenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C27A2561F28DAA900272ED7 /* ScalesChallenge.storyboard */; };
 		3C2957E31F1EA28D00D547B3 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */; };
 		3C2957E71F1EA82B00D547B3 /* Challenge.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */; };
 		3C2B104D1F26A59400D52CB0 /* a-flat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 3C2B10281F26A59400D52CB0 /* a-flat.m4a */; };
@@ -78,6 +80,8 @@
 		3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScalesPracticeViewController.storyboard; path = Storyboards/ScalesPracticeViewController.storyboard; sourceTree = "<group>"; };
 		3C2071731F277F80003A04AA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		3C21E7FF1F1C4FF400FF3164 /* NoteCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCardItem.swift; path = Models/NoteCardItem.swift; sourceTree = "<group>"; };
+		3C27A2541F28D1AA00272ED7 /* ScalesWrongAnswerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScalesWrongAnswerViewController.swift; path = Controllers/ScalesWrongAnswerViewController.swift; sourceTree = "<group>"; };
+		3C27A2561F28DAA900272ED7 /* ScalesChallenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ScalesChallenge.storyboard; path = Storyboards/ScalesChallenge.storyboard; sourceTree = "<group>"; };
 		3C2957E21F1EA28D00D547B3 /* CountdownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownViewController.swift; path = Controllers/CountdownViewController.swift; sourceTree = "<group>"; };
 		3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Challenge.storyboard; path = Storyboards/Challenge.storyboard; sourceTree = "<group>"; };
 		3C2B10281F26A59400D52CB0 /* a-flat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a-flat.m4a"; sourceTree = "<group>"; };
@@ -250,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2071731F277F80003A04AA /* Main.storyboard */,
+				3C27A2561F28DAA900272ED7 /* ScalesChallenge.storyboard */,
 				3C2957E61F1EA82B00D547B3 /* Challenge.storyboard */,
 				3C2071711F277E0C003A04AA /* ScalesPracticeViewController.storyboard */,
 				3C3AA2A11F1E64EF00EF7316 /* PlaySounds.storyboard */,
@@ -286,6 +291,7 @@
 				3C55C5E21F1908D4004FED66 /* CourseSelectionTableViewController.swift */,
 				3C1D33191F1FF0210084493C /* CorrectAnswerViewController.swift */,
 				3C1D331B1F1FF0740084493C /* WrongAnswerViewController.swift */,
+				3C27A2541F28D1AA00272ED7 /* ScalesWrongAnswerViewController.swift */,
 				3C55C5E41F1911C6004FED66 /* PlaySoundViewController.swift */,
 				3CF7385A1F2288350050046D /* ScalesPracticeViewController.swift */,
 				3C3AA2A71F1E921A00EF7316 /* ChallengeViewController.swift */,
@@ -395,6 +401,7 @@
 				3C2B10661F26A59400D52CB0 /* short-a.m4a in Resources */,
 				3C2B10691F26A59400D52CB0 /* short-c-sharp.m4a in Resources */,
 				3C2B10671F26A59400D52CB0 /* short-b-flat.m4a in Resources */,
+				3C27A2571F28DAA900272ED7 /* ScalesChallenge.storyboard in Resources */,
 				3C2B10511F26A59400D52CB0 /* c-sharp.m4a in Resources */,
 				3C2B10641F26A59400D52CB0 /* middle-c.m4a in Resources */,
 				3CF7385F1F2290790050046D /* ScaleCollectionViewCell.xib in Resources */,
@@ -421,6 +428,7 @@
 				3C55C5E31F1908D4004FED66 /* CourseSelectionTableViewController.swift in Sources */,
 				3C3AA2A81F1E921A00EF7316 /* ChallengeViewController.swift in Sources */,
 				3CF34DC01F16721900E5DF45 /* AppDelegate.swift in Sources */,
+				3C27A2551F28D1AA00272ED7 /* ScalesWrongAnswerViewController.swift in Sources */,
 				3CF34DDC1F16767D00E5DF45 /* iTone.xcdatamodeld in Sources */,
 				3CE1D13B1F1D7D6500A55D62 /* Constants.swift in Sources */,
 				3CF7385B1F2288350050046D /* ScalesPracticeViewController.swift in Sources */,

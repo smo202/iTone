@@ -18,7 +18,21 @@ class ScalesChallengeViewController: UIViewController {
         playAgainButton.layer.cornerRadius = 10
         ScalesChallengeViewController.scaleNumber = Int(arc4random_uniform(8))
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.barTintColor = UIColor(red: 243/255, green: 156/255, blue: 18/255, alpha: 1.0)
+        ScalesChallengeViewController.scaleNumber = Int(arc4random_uniform(8))
+    }
 
+    func checkScaleNumber(_ value: Int) {
+        if ScalesChallengeViewController.scaleNumber == value {
+            ScalesPracticeViewController.player?.pause()
+            performSegue(withIdentifier: Constants.Segues.correctAnswer, sender: self)
+        } else {
+            ScalesPracticeViewController.player?.pause()
+            performSegue(withIdentifier: Constants.Segues.wrongAnswer, sender: self)
+        }
+    }
 }
 
 extension ScalesChallengeViewController {
@@ -48,20 +62,28 @@ extension ScalesChallengeViewController {
 
 extension ScalesChallengeViewController {
     @IBAction func ionianPressed(_ sender: Any) {
+        checkScaleNumber(0)
     }
     @IBAction func aeolianPressed(_ sender: Any) {
+        checkScaleNumber(1)
     }
     @IBAction func harmonicPressed(_ sender: Any) {
+        checkScaleNumber(2)
     }
     @IBAction func dorianPressed(_ sender: Any) {
+        checkScaleNumber(3)
     }
     @IBAction func phrygianPressed(_ sender: Any) {
+        checkScaleNumber(4)
     }
     @IBAction func lydianPressed(_ sender: Any) {
+        checkScaleNumber(5)
     }
     @IBAction func mixolydianPressed(_ sender: Any) {
+        checkScaleNumber(6)
     }
     @IBAction func locrianPressed(_ sender: Any) {
+        checkScaleNumber(7)
     }
     @IBAction func playAgainPressed(_ sender: Any) {
         switch ScalesChallengeViewController.scaleNumber {
