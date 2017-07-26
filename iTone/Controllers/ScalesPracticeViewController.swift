@@ -44,6 +44,10 @@ class ScalesPracticeViewController: UIViewController {
         collectionView.setContentOffset(start, animated: false)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        ScalesPracticeViewController.player?.pause()
+    }
+    
 }
 
 extension ScalesPracticeViewController {
